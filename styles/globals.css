@@ -7,8 +7,8 @@ body {
 
 header,
 section {
-  padding: 4px;
   max-width: 65rem;
+  padding: 4px;
   width: 100%;
 }
 

@@ -1,9 +1,7 @@
-/* sections */
-
 .lines {
+  left: -70px;
   position: absolute;
   top: -50px;
-  left: -70px;
 }
 
 .section-content {
@@ -31,24 +29,24 @@
 
 .right {
   align-self: flex-start;
-  position: relative;
     margin: 4px 100px 4px 32px;
+  position: relative;
 }
 
 .right-filler {
   background-color: rgba(255, 255, 255, 0.1);
-  position: absolute;
-  width: 90%;
   height: 40px;
   left: -70px;
+  position: absolute;
+  width: 90%;
 }
 
 .arrow {
-  position: relative;
   left: 20px;
+  position: relative;
   top: -30px;
-  width: 80px;
   transform: rotate(90deg);
+  width: 80px;
 }
 
 .relative {
@@ -83,15 +81,15 @@
 
   .right-filler {
     background-color: rgba(255, 255, 255, 0.1);
-    position: absolute;
-    width: 90%;
     height: 40px;
     left: -70px;
+    position: absolute;
+    width: 90%;
   }
 
   .arrow {
-    position: relative;
     left: -120px;
+    position: relative;
     top: 30px;
     transform: rotate(0deg);
     width: 100px;
