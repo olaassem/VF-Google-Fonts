@@ -9,7 +9,7 @@
 .section-content {
   font-size: 16px;
   font-weight: 300;
-  margin: 4px 32px;
+  margin: 4px 100px 4px 32px;
   padding-bottom: 60px;
 }
 
@@ -19,28 +19,20 @@
 
 .flex {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   position: relative;
-}
-
-.left {
-  flex-basis: 68%;
-}
-
-.left-single {
-  width: 68%;
 }
 
 .sidebar-content {
   font-size: 11px;
   font-weight: 300;
-  margin: ;
 }
 
 .right {
-  align-self: flex-end;
-  flex-basis: 22%;
+  align-self: flex-start;
   position: relative;
+    margin: 4px 100px 4px 32px;
 }
 
 .right-filler {
@@ -53,11 +45,55 @@
 
 .arrow {
   position: relative;
-  left: -120px;
-  top: 30px;
-  width: 100px;
+  left: 20px;
+  top: -30px;
+  width: 80px;
+  transform: rotate(90deg);
 }
 
 .relative {
   position: relative;
+}
+
+/* Desktop */
+@media screen and (min-width: 1170px) {
+  .flex {
+    flex-direction: row;
+  }
+
+  .left {
+    flex-basis: 68%;
+  }
+
+  .left-single {
+    width: 68%;
+  }
+
+  .sidebar-content {
+    font-size: 11px;
+    font-weight: 300;
+    margin: ;
+  }
+
+  .right {
+    align-self: flex-end;
+    flex-basis: 22%;
+    position: relative;
+  }
+
+  .right-filler {
+    background-color: rgba(255, 255, 255, 0.1);
+    position: absolute;
+    width: 90%;
+    height: 40px;
+    left: -70px;
+  }
+
+  .arrow {
+    position: relative;
+    left: -120px;
+    top: 30px;
+    transform: rotate(0deg);
+    width: 100px;
+  }
 }
